@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <h1>Formulario basico</h1>
+    <form>
+        <fieldset>
+
+            <legend>Datos Personales</legend>
+
+            <label for="nombre">Nombre:</label><br/>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="true" /><br/>
+
+            <label for="apellido">Apellido:</label><br/>
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required="true" /><br/>
+
+            <label for="email">Email</label><br/>
+            <input type="email" id="email" name="email" /><br/>
+
+            <label for="edad">Edad:</label><br/>
+            <input type="number" id="edad" name="edad" step="any" /><br/>
+
+            <label>Genero</label><br/>
+
+            <input type="radio" id="femenino" name="genero" value="femenino" />
+            <label for="femenino">Femenino</label><br/>
+
+            <input type="radio" id="masculino" name="genero" value="masculino" />
+            <label for="masculino">Masculino</label><br/>
+
+            <input type="radio" id="prefiero no decirlo" name="genero" value="prefiero no decirlo" />
+            <label for="prefiero no decirlo">Prefiero no decirlo</label><br/>
+
+            <label>Genero de musica favorita</label><br/>
+
+            <input type="checkbox" id="clasica" name="musica" value="clasica" />
+            <label for="clasica">Clasica</label><br/>
+
+            <input type="checkbox" id="rock" name="musica" value="rock" />
+            <label for="rock">Rock</label>
+
+            <label for="paises">Paises</label><br/>
+
+            <select name="paises" id="paises">
+
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="peru">Peru</option>
+                <option selected="true">Pais de origen</option>
+            
+            </select><br/>
+
+            <label for="comentarios">Comentario:</label><br/>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="2">Comentarios</textarea><br/>
+
+        </fieldset>
+
+        <hr>
+
+        <input type="submit" value="Enviar" />
+
+        <hr>
+
+        <h2>Formulario con estilo</h2>
+
+    </form>
+
+    <div class="contenedor">
+
+        <h2>Login</h2>
+
+        <form id="forma" name="forma" method="get">
+
+            <div class="elemento">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required="true" />
+            </div>
+
+            <div class="elemento">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required="true" />
+            </div>
+
+            <div class="elemento">
+                <input type="submit" value="Enviar" />
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
